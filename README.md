@@ -41,10 +41,10 @@ the package (source: Yahoo finance).
 ![](fig1.png)
 
 Interpretation:
-* upper-left: Fluctuation plot. The slopes of the lines represent the Hurst exponents (one line per moment q). If the lines are parallel then the series is monofractal (e.g., classic Brownian motion), otherwise multifractal. 
-* upper-right: Multifractal spectrum. The wider, the stronger the degree of multifractality and non-linear auto-correlation. Hölder exponents are abbreviated by $\alpha$.
-* lower-left: generalized Hurst exponents. Would be approximately flat if monofractal.
-* lower-right: Scaling function. Is linear if monofractal, otherwise convex. 
+* *upper-left:* Fluctuation plot. The slopes of the lines represent the Hurst exponents (one line per moment q). If the lines are parallel then the series is monofractal (e.g., classic Brownian motion), otherwise multifractal. 
+* *upper-right:* Multifractal spectrum. The wider, the stronger the degree of multifractality and non-linear auto-correlation. Hölder exponents are abbreviated by $\alpha$.
+* *lower-left:* generalized Hurst exponents. Would be approximately flat if monofractal.
+* *lower-right:* Scaling function. Is linear if monofractal, otherwise convex. 
     
 ``` r
     ## Extract Persistence and Multifractal Strength
