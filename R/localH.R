@@ -1,10 +1,6 @@
 
 localH <- function(mdl, scale=5:21, m=1, align="center"){
 
-  # Note:
-  # distribution of time-scale local H exponent = local MF
-  # see: https://www.sciencedirect.com/science/article/pii/S0966636213005821?via%3Dihub#fig0005
-
   if(class(mdl) != "multifractal") stop("The input 'mdl' is not of class 'multifractal'. Pleas use the 'mfdfa' to create 'mdl'.")
 
   x <- mdl$x
@@ -82,17 +78,19 @@ localH <- function(mdl, scale=5:21, m=1, align="center"){
   return(res)
 }
 
-plot.localH <- function(Ht){
-
-  # Ht <- data.frame(as.matrix(Ht))
+plot.localH <- function(Ht, dates=NA,...){
+  
+  if(is.na(dates[1])) dates <- rownames(Ht)
+  dates <- dates[which(!is.na(Ht$Ht))]
   Ht <- Ht[!is.na(Ht$Ht), ]
-  tt <- rownames(Ht)
-  xx <- c(tt, rev(tt))
+  
+  xx <- c(dates, rev(dates))
   yy <- c(Ht$Ht + Ht$iqr/2, rev(Ht$Ht - Ht$iqr/2))
-
-  plot(Ht$Ht, type="l", xlab="time", ylab=expression(H[t]), main="Local Persistence")
+  
+  plot(dates, Ht$Ht, type="l", xlab="time", ylab=expression(H[t]), main="Local Persistence")
   polygon(xx, yy, col = "lightgray", border=NA)
-  lines(Ht$Ht)
-
+  lines(dates, Ht$Ht)
+  abline(h=0.5, lty="dashed")
 }
+
 
