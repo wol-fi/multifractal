@@ -64,3 +64,12 @@ Interpretation:
     #> 
     #>  multifractality is significant
 ```
+
+
+##### Compute the Temporal Return Persistence
+
+``` r
+Ht <- localH(mdl)
+plot(Ht, dates=p$Date[-1])
+```
+![](fig2.png)
