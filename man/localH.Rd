@@ -2,7 +2,7 @@
 \alias{localH}
 \title{Local Hurst Exponent}
 
-\description{Estimates the local Hurst exponent based on Ihlen and Vereijken (2014).}
+\description{Estimates the local Hurst exponent based on Ihlen and Vereijken (2014). This measures the current, temporal degree of persistence. A value larger 0.5 means positive auto-correlation and below 0.5 describes negative auto-correlation.}
 
 \usage{localH(x, mdl, scale=5:21, m=1, align="center")}
 
