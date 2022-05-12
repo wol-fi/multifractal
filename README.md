@@ -33,9 +33,10 @@ the package (source: Yahoo finance).
 
     ## plot the output
     plot(mdl, newindow=F)
-
+```
 ![](fig1.png)
 
+``` r
     # Interpretation:
     #  - upper-left: Fluctuation plot. The slopes of the lines represent the Hurst exponents
     #                (one line per moment q). If the lines are parallel then the series is monofractal 
