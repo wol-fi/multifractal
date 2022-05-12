@@ -44,7 +44,7 @@ Interpretation:
 * *lower-left:* generalized Hurst exponents. Would be approximately flat if monofractal.
 * *lower-right:* Scaling function. Is linear if monofractal, otherwise convex. 
     
-###### Extract Persistence and Multifractal Strength
+##### Extract Persistence and Multifractal Strength
 ``` r
     stats <- print(mdl)
     #> 
@@ -55,8 +55,8 @@ Interpretation:
     #>  diff. Hurst =  0.1146917 
     #>  diff. Hölder =  0.2261127
 ```
+##### Test Significance
 ``` r
-###### Test Significance
     sig <- significance(mdl, size=10, pval=0.1)
     #>          diff_Holder
     #> original   0.2261127
