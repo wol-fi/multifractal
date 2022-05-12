@@ -16,9 +16,7 @@ surrogates.
 
 ## Usage
 
-The below example illustrates a multifractal analysis of the S&P 500
-stock market index (daily, 1992-2022). The example dataset comes with
-the package (source: Yahoo finance).
+The below example illustrates a multifractal analysis of the S&P 500 stock market index (daily, 1992-2022). The example dataset is provided by the package.
 
 ``` r
     library(multifractal)
@@ -60,7 +58,6 @@ Interpretation:
 
     ## Test Significance
     sig <- significance(mdl, size=10, pval=0.1)
-    #> ..........
     #>          diff_Holder
     #> original   0.2261127
     #> 90% C.I.   0.2061173
