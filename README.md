@@ -73,5 +73,7 @@ Ht <- localH(mdl)
 plot(Ht, dates=p$Date[-1])
 ```
 ![](fig2.png)
+
 Interpretation:
+
 Above 0.5 means that the S&P 500 currently has a positive auto-correlation, below 0.5 means that returns are anti-persistent.
