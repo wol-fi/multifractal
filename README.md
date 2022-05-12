@@ -27,18 +27,20 @@ the package (source: Yahoo finance).
     # load the example dataset 'sp500' and calculate daily log-returns
     p <- sp500
     r <- diff(log(p$Adj.Close)) 
+```
 
-    ## multifractal analysis
+### multifractal analysis
+``` r
+    
     # estimate the statistics
     mdl <- mfdfa(r, overlap=T)
-    #> ....................
 
     ## plot the output
     plot(mdl, newindow=F)
 ```
 ![](fig1.png)
 
-``` r
+
     # Interpretation:
     #  - upper-left: Fluctuation plot. The slopes of the lines represent the Hurst exponents
     #                (one line per moment q). If the lines are parallel then the series is monofractal 
@@ -47,7 +49,8 @@ the package (source: Yahoo finance).
     #                non-linear auto-correlation. Hölder exponents are abbreviated by $\alpha$.
     #  - lower-left: generalized Hurst exponents. Would be approximately flat if monofractal.
     #  - lower-right: Scaling function. Is linear if monofractal, otherwise convex. 
-
+    
+``` r
     ## Extract Persistence and Multifractal Strength
     stats <- print(mdl)
     #> 
