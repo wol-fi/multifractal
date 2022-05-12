@@ -18,6 +18,7 @@ The below example illustrates a multifractal analysis of the S&P 500
 stock market index (daily, 1992-2022). The example dataset comes with
 the package (source: Yahoo finance).
 
+``` r
     library(multifractal)
 
     ## preparation:
@@ -63,3 +64,4 @@ the package (source: Yahoo finance).
     #> 90% C.I.   0.2061173
     #> 
     #>  multifractality is significant
+```
