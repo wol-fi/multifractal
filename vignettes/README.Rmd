@@ -8,7 +8,8 @@ vignette: >
 ---
 
 ## Overview
-This is an improved package for multifractal detrended fluctuation (MF-DFA) and surroagte analysis (IAAFT, IAAWT). It allows to enhance the robustness and reliability of classic MF-DFA via overlapping windows. It further enables to test the significance of multifractality via IAAFT surrogates. 
+
+This is an improved package for multifractal detrended fluctuation (MF-DFA) and surroagte analysis (IAAFT, IAAWT). It allows to enhance the robustness and reliability of classic MF-DFA via overlapping windows. It further enables to test the significance of multifractality via IAAFT surrogates.
 
 ## Installation
 
@@ -16,7 +17,6 @@ This is an improved package for multifractal detrended fluctuation (MF-DFA) and 
 devtools::install_github("wol-fi/multifractal")
 
 ```
-
 
 ## Usage
 
@@ -38,35 +38,39 @@ p <- sp500
 r <- diff(log(p$Adj.Close)) 
 ```
 
-## multifractal analysis
+### multifractal analysis
 
 ```{r, fig.height = 5, fig.width = 7}
 # estimate the statistics
-mdl <- mfdfa(r, overlap=F)
+mdl <- mfdfa(r, overlap=T)
 
 ## plot the output
 plot(mdl, newindow=F)
 ```
+
 Interpretation:
-* *upper-left:* Fluctuation plot. The slopes of the lines represent the Hurst exponents (one line per moment q). If the lines are parallel then the series is monofractal (e.g., classic Brownian motion), otherwise multifractal. 
-* *upper-right:* Multifractal spectrum. The wider, the stronger the degree of multifractality and non-linear auto-correlation. Hölder exponents are abbreviated by \alpha.
-* *lower-left:* generalized Hurst exponents. Would be approximately flat if monofractal.
-* *lower-right:* Scaling function. Is linear if monofractal, otherwise convex.  
+
+-   *upper-left:* Fluctuation plot. The slopes of the lines represent the Hurst exponents (one line per moment q). If the lines are parallel then the series is monofractal (e.g., classic Brownian motion), otherwise multifractal.
+-   *upper-right:* Multifractal spectrum. The wider, the stronger the degree of multifractality and non-linear auto-correlation. Hölder exponents are abbreviated by \\alpha.
+-   *lower-left:* generalized Hurst exponents. Would be approximately flat if monofractal.
+-   *lower-right:* Scaling function. Is linear if monofractal, otherwise convex.
 
 ##### Extract Persistence and Multifractal Strength
+
 ```{r}
 stats <- print(mdl)
 ```
 
 ##### Test Significance
+
 ```{r}
-sig <- significance(mdl, size=3, pval=0.1)
+sig <- significance(mdl, size=10, pval=0.1)
 
 ```
 
 ##### Compute the Temporal Return Persistence
+
 ```{r, fig.height = 5, fig.width = 7}
 Ht <- localH(mdl)
 plot(Ht, dates=p$Date[-1])
 ```
-
