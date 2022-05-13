@@ -1,6 +1,7 @@
 # Import packages
 import("waveslim")
 import("pracma")
+import("grDevices")
 
 # Export Fucntions
 export("iaaft", "iaawt", "mfdfa", "significance", "localH", "mfsim", "ffGn")
