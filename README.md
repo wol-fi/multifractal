@@ -89,3 +89,4 @@ p <- exp(cumsum(r))     # transform return into price
 plot(p, type="l)
 
 ```
+![](fig3.png)
