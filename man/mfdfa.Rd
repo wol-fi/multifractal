@@ -35,4 +35,8 @@ It comes with the methods \code{plot()} and \code{print()} to easily visualize/a
 
 \seealso{\code{\link{significance}}}
 
+\references{Kantelhardt, J. W., Zschiegner, S. A., Koscielny-Bunde, E., Havlin, S., Bunde, A., & Stanley, H. E. (2002). Multifractal detrended fluctuation analysis of nonstationary time series. \emph{Physica A: Statistical Mechanics and its Applications}, 316(1-4), 87-114.}
+
+\author{Wolfgang Schadner}
+
 \keyword{fractal}

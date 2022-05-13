@@ -33,6 +33,7 @@
 
 \seealso{\code{\link{mfdfa}}}
 
-\references{Ihlen E. A. F. and Vereijken B. (2014), Detection of co-regulation of local structure and magnitude of stride time variability using a new local detrended fluctuation analysis, \emph{Gait Posture}, 39(1), p.466-471.}
+\references{Ihlen E. A. F., & Vereijken B. (2014). Detection of co-regulation of local structure and magnitude of stride time variability using a new local detrended fluctuation analysis. \emph{Gait Posture}, 39(1), p.466-471.}
 
 \keyword{fractal}
+\author{Wolfgang Schadner}

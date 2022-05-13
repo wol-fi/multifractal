@@ -3,8 +3,7 @@
 \title{Iterated Amplitude Adjusted Fourier Transform}
 
 \description{
-  Performs the iterated amplitude adjusted Fourier transformation (IAAFT) upon a time-series \code{x}. Code is based on  Henning Rust (2006).
-}
+  Performs the iterated amplitude adjusted Fourier transformation (IAAFT) upon a time-series \code{x}.}
 
 \usage{iaaft(x, xdist=x, N=1, ...)}
 
@@ -33,3 +32,7 @@
 \references{T. Schreiber and A. Schmitz (2000), Surrogate time series, \emph{Physica D}, 142, pp.346-382.}
 
 \keyword{fractal}
+
+\note{Code is based on  Henning Rust (2006).}
+
+\author{Wolfgang Schadner}

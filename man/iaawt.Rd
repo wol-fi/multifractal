@@ -30,4 +30,8 @@
 
 \seealso{\code\link{iaaft}}
 
+\note{Translated from Matlab into R. Original Matlab code by Chris Keylock.}
+
+\author{Wolfgang Schadner}
+
 \references{Keylock, C. J. (2017), Multifractal surrogate-data generation algorithm that preserves pointwise Holder regularity structure, with initial applications to turbulence, \emph{Physical Review E}, 95(3), 032123.}

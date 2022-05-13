@@ -33,4 +33,6 @@ significance(model, size, pval, ...)
 
 \seealso{\code{\link{mfdfa}}}
 
+\author{Wolfgang Schadner}
+
 \keyword{fractal}

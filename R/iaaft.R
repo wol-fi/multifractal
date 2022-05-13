@@ -25,7 +25,6 @@ iaaft <- function(x, xdist=x, N=1, tolerance=0.01, maxit=100, adjust.var=TRUE,
 
     c <- sort(xdist,method=method)
     S <- fft(x)
-    # r <- sample(xdist)
 
     if(criterion=="acf")
       Xacf <- acf(x,plot=FALSE,lag.max=n-1) ## for acf convergence criterion
@@ -71,7 +70,6 @@ iaaft <- function(x, xdist=x, N=1, tolerance=0.01, maxit=100, adjust.var=TRUE,
       if(!is.null(xdist.mean)) r <- r+xdist.mean
 
       rr[[j]] <- r
-      # return(r)
     }
     rr <- do.call("cbind", rr)
     return(rr)

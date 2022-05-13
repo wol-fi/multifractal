@@ -3,7 +3,7 @@ import("waveslim")
 import("pracma")
 
 # Export Fucntions
-export("iaaft", "iaawt", "mfdfa", "significance", "localH")
+export("iaaft", "iaawt", "mfdfa", "significance", "localH", "mfsim", "ffGn")
 
 # Methods
 S3method("plot", "multifractal")
