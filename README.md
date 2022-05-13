@@ -2,11 +2,8 @@
 
 ## Overview
 
-This is an improved package for multifractal detrended fluctuation analysis
-(MF-DFA), simulation of multifractal series, and surroagte analysis (IAAFT, IAAWT). It allows to enhance the
-robustness and reliability of classic MF-DFA via overlapping windows. It
-further enables to test the significance of multifractality via IAAFT
-surrogates.
+This is an improved package for multifractal detrended fluctuation analysis (MF-DFA), simulation of multifractal series, and surroagte analysis (IAAFT, IAAWT). It allows to enhance the robustness and reliability of classic MF-DFA via overlapping windows. It further enables to test the significance of multifractality via IAAFT
+surrogates. Simulations are based on Mandelbrot's multifractal model of asset returns (MMAR).
 
 ## Installation
 
@@ -27,7 +24,7 @@ The below example illustrates a multifractal analysis of the S&P 500 stock marke
     r <- diff(log(p$Adj.Close)) 
 ```
 
-#### multifractal analysis
+### Multifractal Analysis
 ``` r
     
     # estimate the statistics
@@ -77,3 +74,18 @@ plot(Ht, dates=p$Date[-1])
 Interpretation:
 
 Above 0.5 means that the S&P 500 currently has a positive auto-correlation, below 0.5 means that returns are anti-persistent.
+
+### Simulate Multifractal Series
+
+An example of simulating multifractal returns and prices series.
+
+``` r
+B <- mfsim()    # simulate the multifractal Brownian Motion
+
+r <- diff(B)    # take the increments as log-returns
+r <- (r - mean(r))/sd(r) * 0.01 + 0     # transform returns into desired mean and standard deviation
+
+p <- exp(cumsum(r))     # transform return into price
+plot(p, type="l)
+
+```
