@@ -2,8 +2,8 @@
 
 ## Overview
 
-This is an improved package for multifractal detrended fluctuation
-(MF-DFA) and surroagte analysis (IAAFT, IAAWT). It allows to enhance the
+This is an improved package for multifractal detrended fluctuation analysis
+(MF-DFA), simulation of multifractal series, and surroagte analysis (IAAFT, IAAWT). It allows to enhance the
 robustness and reliability of classic MF-DFA via overlapping windows. It
 further enables to test the significance of multifractality via IAAFT
 surrogates.
