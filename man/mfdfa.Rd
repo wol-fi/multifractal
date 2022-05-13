@@ -6,7 +6,7 @@
  Performs the multifractal detrended fluctuation analysis upon a time-series \code{x}. Allows the improvement of overlapping windows.
 }
 
-\usage{mfdfa(x, scale=NA, q=-5:5, m = 1, overlap=FALSE)}
+\usage{mfdfa(x, scale=NA, q=-5:5, m=1, overlap=FALSE)}
 
 \arguments{
   \item{x}{a numeric vector containing the values of the time-series.}

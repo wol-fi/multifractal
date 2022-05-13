@@ -26,8 +26,9 @@
 
   mdl <- mfdfa(x, overlap=T)
 
-  Ht <- localH(x, mdl)
-
+  Ht <- localH(mdl)
+  
+  plot(Ht)
 }
 
 \seealso{\code{\link{mfdfa}}}
