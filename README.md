@@ -1,9 +1,10 @@
 # multifractal
 
+Reference Manual: [multifractal.pdf](multifractal.pdf)
+
 ## Overview
 
-This is an improved package for multifractal detrended fluctuation analysis (MF-DFA), simulation of multifractal series, and surroagte analysis (IAAFT, IAAWT). It allows to enhance the robustness and reliability of classic MF-DFA via overlapping windows. It further enables to test the significance of multifractality via IAAFT
-surrogates. Simulations are based on Mandelbrot's multifractal model of asset returns (MMAR).
+This is an improved package for multifractal detrended fluctuation analysis (MF-DFA), simulation of multifractal series, and surroagte analysis (IAAFT, IAAWT). It allows to enhance the robustness and reliability of classic MF-DFA via overlapping windows. It further enables to test the significance of multifractality via IAAFT surrogates. Simulations are based on Mandelbrot's multifractal model of asset returns (MMAR).
 
 ## Installation
 
