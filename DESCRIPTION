@@ -1,15 +1,11 @@
 Package: multifractal
 Type: Package
 Title: Multifractal and Surrogate Analysis
-Version: 0.1.0
+Version: 1.0.0
 Author: Wolfgang Schadner
 Maintainer: Wolfgang Schadner <wolfgang.schadner@unisg.ch>
-Description: The package provides functions for performing improved MF-DFA anaylsis and testing the significance of multifractality. 
+Description: The package provides functions for performing improved MF-DFA anaylsis, simulation of multifractal signals and surrogate algorithms (IAAFT, IAAWT) for testing the significance of multifractality. 
 License: GPL-2 | GPL-3
 Encoding: UTF-8
 LazyData: true
-Suggests: 
-    knitr,
-    rmarkdown
-VignetteBuilder: knitr
 Imports: waveslim, pracma, grDevices

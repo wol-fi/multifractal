@@ -15,7 +15,7 @@
   \item{...}{other parameters to control for the accuracy.}
 }
 
-\details{The algorithm can be used to randomize a time-series \code{x} phase while keeping the non-linear correlation structure (point-wise Hölder regularity). It can further transform \item{x} to match any empirical distribution \code{xdist}.}
+\details{The algorithm can be used to randomize a time-series \code{x} phase while keeping the non-linear correlation structure (point-wise Hölder regularity). It can further transform \code{x} to match any empirical distribution \code{xdist}.}
 
 \value{Returns a numeric vector or matrix of the surrogated time-series.}
 
@@ -28,7 +28,7 @@
   z <- iaawt(x, y)
 }
 
-\seealso{\code\link{iaaft}}
+\seealso{\code{\link{iaaft}}}
 
 \note{Translated from Matlab into R. Original Matlab code by Chris Keylock.}
 
