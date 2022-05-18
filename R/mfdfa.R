@@ -128,9 +128,9 @@ print.multifractal <- function(mdl, ...){
   names(coef) <- c("dH", "dAlpha")
 
   H <- mdl$Hq[which(mdl$q==2)]
-  pers <- ifelse(H>0.5, "trending, pos. auto-corr", "anti-persistent, neg. auto-corr.")
+  pers <- ifelse(H>0.5, "trending", "anti-persistent")
   if(H==0.5) pers <- "fully random"
-  cat("\nPersistence: \n", H, "  ... = ", pers,
+  cat("\nPersistence: \n", H, "  ... ", pers,
       "\n\nMultifractal Strength:\n diff. Hurst = ", coef[1],
       "\n diff. Hölder = ", coef[2], "\n\n")
 
