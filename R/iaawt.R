@@ -65,7 +65,7 @@ iaawt <- function(x, xdist=x, N=1, accerror=.001, error_change=100){
 
     newZh <- list()
     while((amperror[counter] > accerror) & (waverror[counter] > accerror)){
-      cat(".")
+      # cat(".")
       # wavelet construction
       oldz <- z
       for(j in 1:numlevels){

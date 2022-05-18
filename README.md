@@ -52,6 +52,10 @@ Interpretation:
     #> Multifractal Strength:
     #>  diff. Hurst =  0.1146917 
     #>  diff. Hölder =  0.2261127
+    
+    diff(mdl)
+    #> diff Hurst diff Hölder 
+    #>  0.1146917   0.2261127 
 ```
 ##### Test Significance
 ``` r

@@ -132,12 +132,20 @@ print.multifractal <- function(mdl, ...){
   if(H==0.5) pers <- "fully random"
   cat("\nPersistence: \n", H, "  ... = ", pers,
       "\n\nMultifractal Strength:\n diff. Hurst = ", coef[1],
-      "\n diff. Hölder = ", coef[2])
+      "\n diff. Hölder = ", coef[2], "\n\n")
 
 
   ret <- list(coef=coef, H=H)
   return(coef)
 }
+
+diff.multifractal <- function(mdl){
+  spr <- c(max(mdl$Hq) - min(mdl$Hq),
+           max(mdl$alpha) - min(mdl$alpha))
+  names(spr) <- c("diff Hurst", "diff Hölder")
+  return(spr)
+}
+
 
 significance <- function(mdl, size=100, pval=0.05, overlap=FALSE, ...){
   x <- mdl$x
@@ -165,3 +173,4 @@ significance <- function(mdl, size=100, pval=0.05, overlap=FALSE, ...){
   cat("\n", msg, "\n\n")
   return(ret)
 }
+
