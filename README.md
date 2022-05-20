@@ -101,8 +101,19 @@ plot(p, type="l)
 ### References
 Chris Keylock's IAAWT was translated from [Matlab](https://ch.mathworks.com/matlabcentral/fileexchange/62382-iterated-amplitude-adjusted-wavelet-transform-iaawt-for-time-series-randomisation)
 
-MF-DFA:
-Kantelhardt et al (2002). Multifractal detrended fluctuation analysis of nonstationary time series. *Physica A*, **316**(1-4), p.87-114. [link](https://doi.org/10.1016/S0378-4371(02)01383-3)
+#### Applications
+*Finance:*
+Schadner, W. (2021). On the persistence of market sentiment: A multifractal fluctuation analysis. *Physica A*, **581**, 126242. [link](https://doi.org/10.1016/j.physa.2021.126242)
 
-IAAWT: 
+*Social Science:*
+Schadner, W. (2021). U.S. Politics from a multifractal perspective. *Chaos, Solitons & Fractals*, **155**, 111677. [link](https://doi.org/10.1016/j.chaos.2021.111677)
+
+#### Methodology
+*MF-DFA:*
+Kantelhardt, J.W., et al. (2002). Multifractal detrended fluctuation analysis of nonstationary time series. *Physica A*, **316**(1-4), p.87-114. [link](https://doi.org/10.1016/S0378-4371(02)01383-3)
+
+*IAAWT:*
 Keylock, C.J. (2017). Multifractal surrogate-data generation algorithm that preserves pointwise Hölder regularity structure, with initial applications to turbulence. *Physical Review E*, **95**, 032123. [link](https://doi.org/10.1103/PhysRevE.95.032123)
+
+*IAAFT:*
+Schreiber, T. and Schmitz, A. (2000). Surrogate time series. *Physica D*, **142**(3–4), p.346–382. [link](https://doi.org/10.1016/S0167-2789(00)00043-9)
