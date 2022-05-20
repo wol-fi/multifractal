@@ -2,9 +2,11 @@
 
 Reference Manual: [multifractal.pdf](multifractal.pdf)
 
+*Keywords:* MFDFA, MMAR, IAAFT, IAAWT, Surrogate Analysis
+
 ## Overview
 
-This is an improved package for multifractal detrended fluctuation analysis (MF-DFA), simulation of multifractal series (Multifractal Model of Asset Returns, MMAR), and surroagte analysis using Iterated Amplitude Adjusted Fourier Transform (IAAFT) and Iterated Amplitude Adjusted (IAAWT). It allows to enhance the robustness and reliability of classic MF-DFA via overlapping windows. It further enables to test the significance of multifractality via IAAFT surrogates. Simulations are based on Mandelbrot's multifractal model of asset returns (MMAR).
+This is an improved package for multifractal detrended fluctuation analysis (MF-DFA), simulation of multifractal series (Multifractal Model of Asset Returns, MMAR), and surroagte analysis using Iterated Amplitude Adjusted Fourier Transform (IAAFT) and Iterated Amplitude Adjusted Wavelet Transform (IAAWT). It allows to enhance the robustness and reliability of classic MF-DFA via overlapping windows. It further enables to test the significance of multifractality via IAAFT surrogates. Simulations are based on Mandelbrot's multifractal model of asset returns (MMAR).
 
 ## Installation
 
@@ -95,3 +97,12 @@ plot(p, type="l)
 
 ```
 ![](fig3.png)
+
+### References
+Chris Keylock's IAAWT was translated from [Matlab](https://ch.mathworks.com/matlabcentral/fileexchange/62382-iterated-amplitude-adjusted-wavelet-transform-iaawt-for-time-series-randomisation)
+
+MF-DFA:
+Kantelhardt et al (2002). Multifractal detrended fluctuation analysis of nonstationary time series. *Physica A*, **316**(1-4), p.87-114. [link](https://doi.org/10.1016/S0378-4371(02)01383-3)
+
+IAAWT: 
+Keylock, C.J. (2017). Multifractal surrogate-data generation algorithm that preserves pointwise Hölder regularity structure, with initial applications to turbulence. *Physical Review E*, **95**, 032123. [link](https://doi.org/10.1103/PhysRevE.95.032123)
