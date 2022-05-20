@@ -106,7 +106,7 @@ Chris Keylock's IAAWT was translated from [Matlab](https://ch.mathworks.com/matl
 Schadner, W. (2021). On the persistence of market sentiment: A multifractal fluctuation analysis. *Physica A*, **581**, 126242. [link](https://doi.org/10.1016/j.physa.2021.126242)
 
 *Social Science:*
-Schadner, W. (2021). U.S. Politics from a multifractal perspective. *Chaos, Solitons & Fractals*, **155**, 111677. [link](https://doi.org/10.1016/j.chaos.2021.111677)
+Schadner, W. (2022). U.S. Politics from a multifractal perspective. *Chaos, Solitons & Fractals*, **155**, 111677. [link](https://doi.org/10.1016/j.chaos.2021.111677)
 
 #### Methodology
 *MF-DFA:*
