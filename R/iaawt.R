@@ -14,9 +14,9 @@ iaawt <- function(x, xdist=x, N=1, accerror=.001, error_change=100){
   count <- 1
   if (abs(numlevels-exactlevels)>0){
     # We need to zero pad
-    temp <- matrix(0, 2^(numlevels+1), 1)
+    temp <- rep(0, 2^(numlevels+1))
     count <- 2^(numlevels+1)-n+1
-    temp[count:length(temp), 1] <- x
+    temp[count:length(temp)] <- x
     x <- temp
   }
   n <- length(x)
@@ -109,7 +109,7 @@ iaawt <- function(x, xdist=x, N=1, accerror=.001, error_change=100){
       rm(list=c("nZh", "nZl"))
     }
 
-    sgates[[k]] <- z[(count+1):length(z)]
+    sgates[[k]] <- z[count:length(z)]
     errors[k] <- toterror
   }
   sgates <- do.call("cbind", sgates)
